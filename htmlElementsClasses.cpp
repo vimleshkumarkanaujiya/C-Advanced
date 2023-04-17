@@ -69,3 +69,10 @@ int main() {
     return 0;
 }
 
+/* In this example, we define a base class HTMLElement that represents an HTML element. The HTMLElement class has a tag_ member variable that stores the tag name of the element, and a content_ member variable that stores the content of the element as a std::stringstream.
+
+The HTMLElement class has an overloaded << operator that allows content to be added to the element. The str method generates the HTML string for the element by using a std::stringstream and the escape_html function to escape any special characters in the content.
+
+We then define two derived classes, HTMLAnchor and HTMLParagraph, that represent specific HTML elements. The HTMLAnchor class takes an href argument in its constructor, which is added to the content of the element as an attribute.
+
+In the main function, we create instances of HTMLParagraph and HTMLAnchor, add content to them using the << operator, and output the resulting HTML strings to the console using std::cout. */
